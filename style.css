@@ -1,0 +1,216 @@
+/* Reset margin dan padding untuk browser yang berbeda */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container utama */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #181818; /* Warna latar belakang gelap */
+    position: relative;
+    padding: 20px;
+}
+
+/* Player */
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #282828;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Track Info */
+.track-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.track-info img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.track-info h2 {
+    color: white;
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.track-info h3 {
+    color: #b3b3b3;
+    font-size: 1em;
+}
+
+/* Progress Bar */
+.progress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#progress-bar {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+#current-time,
+#total-duration {
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.controls button:hover {
+    transform: scale(1.2);
+}
+
+#play-btn i,
+#prev-btn i,
+#next-btn i {
+    font-size: 24px;
+}
+
+/* Playlist */
+.playlist {
+    position: absolute;
+    top: 10px;
+    left: -300px; /* Hidden by default */
+    width: 250px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: left 0.3s ease;
+}
+
+.playlist.show {
+    left: 10px; /* Show when active */
+}
+
+.playlist h2 {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #444;
+}
+
+#track-list {
+    list-style: none;
+    padding: 10px;
+    color: white;
+}
+
+#track-list li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+#track-list li:hover {
+    background-color: #555;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    color: white;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+/* Styling untuk ikon di kanan atas */
+.social-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px; /* Jarak antar ikon */
+}
+
+.social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Efek zoom saat di-hover */
+}
+
+/* Ikon Love (SosialBuzz) */
+.love-btn {
+    background-color: #ff4757; /* Warna merah untuk ikon Love */
+}
+
+.love-btn i {
+    color: white;
+}
+
+/* Ikon Telepon Hijau (WhatsApp) */
+.whatsapp-btn {
+    background-color: #25d366; /* Warna hijau khas WhatsApp */
+    border: 2px solid white; /* Stroke putih */
+}
+
+.whatsapp-btn i {
+    color: white;
+}

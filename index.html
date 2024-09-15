@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tambahkan FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Ikon Love untuk SosialBuzz dan Telepon Hijau untuk WhatsApp -->
+    <div class="social-links">
+        <a href="https://www.sosialbuzz.com" target="_blank" class="love-btn">
+            <i class="fas fa-heart"></i>
+        </a>
+        <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="player">
+            <div class="track-info">
+                <img src="https://via.placeholder.com/250" alt="Track Cover">
+                <h2>Track Title</h2>
+                <h3>Artist Name</h3>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" value="0" min="0">
+                <span id="total-duration">0:00</span>
+            </div>
+
+            <!-- Tombol Kontrol -->
+            <div class="controls">
+                <button id="prev-btn"><i class="fas fa-backward"></i></button>
+                <button id="play-btn"><i class="fas fa-play"></i></button>
+                <button id="next-btn"><i class="fas fa-forward"></i></button>
+            </div>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+            <h2>Playlist</h2>
+            <ul id="track-list">
+                <!-- Track list akan diisi dengan JavaScript -->
+            </ul>
+        </div>
+
+        <!-- Tombol Toggle Playlist -->
+        <button class="toggle-btn">List</button>
+    </div>
+    
+    <!-- Ikon Love untuk SosialBuzz dan Telepon Hijau untuk WhatsApp -->
+    <div class="social-links">
+    <a href="https://sociabuzz.com/moritcd_/tribe" target="_blank" class="love-btn">
+    <i class="fas fa-heart"></i>
+    </a>
+    <a href="https://wa.me/+6289602201344" target="_blank" class="whatsapp-btn">
+    <i class="fas fa-phone"></i>
+    </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Created By xevalr
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
